@@ -3,6 +3,8 @@
 <% @posts.each do |post| %>
   <tr>
     <td><%= post.content %></td>
+    <td><%= link_to '投稿確認', post_path(post.id) %></td>
   </tr>
 <% end %>
 </table>
+<%= link_to 'ツイートする', new_post_path %>
