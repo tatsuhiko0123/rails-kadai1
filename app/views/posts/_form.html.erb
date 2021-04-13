@@ -10,9 +10,8 @@
     </div>
   <% end %>
   <div class="post_content">
-    <%= form.label :content %>
-    <%= form.text_field :content %>
+    <p><%= form.text_field :content %></p>
   </div>
-  <%= form.submit "ツイートする"%>
+  <span><%= form.submit "ツイートする"%></span>
 <% end %>
 <%= link_to "一覧画面に戻る", posts_path %>
